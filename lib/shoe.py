@@ -6,9 +6,11 @@ class Shoe:
         self._size = size
 
 
-    @property
-    def brand(self):
+   
+    def get_brand(self):
         return self._brand
+    
+    brand = property(get_brand,)
     
     @property
     def size(self):
